@@ -1,0 +1,22 @@
+<div >
+  <h1>Edit Todo</h1>
+  <form [formGroup]="inputEdit" *ngIf="dataTodo">
+    <input
+      type="text"
+      class="form-control"
+      formControlName="editSpace"
+      [value]="dataTodo.description"
+    />
+    <div class="boutons">
+      <button
+        class="btn btn-warning"
+        (click)="onEdit(dataTodo.todo_id, dataTodo.description)"
+      >
+        Edit
+      </button>
+      <button class="btn btn-danger" (click)="onCloseModal()">Close</button>
+    </div>
+  </form>
+</div>
+
+

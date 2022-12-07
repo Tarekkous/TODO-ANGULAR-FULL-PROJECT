@@ -1,0 +1,8 @@
+<section class="searchbar">
+  <h1><label for="search">create a todo</label></h1>
+  <form [formGroup]=searchBar (ngSubmit)="onSubmit()">
+    <input type="text" formControlName="Search" id="search" class="form-control" placeholder="write here.." />
+    <button class="btn btn-success">ADD</button>
+  </form>
+
+</section>
